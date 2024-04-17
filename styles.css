@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'OdinFont';
+    src: url('./assets/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+}
+
+#presentation {
+    flex-basis: 700px;
+    background-image: url('./assets/images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-position: center
+}
+
+#odin {
+    position: relative;
+    top: 21%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    color: white;
+    font-family: 'OdinFont';
+    font-size: 60px;
+}
+
+#odin>img {
+    height: 100%;
+}
+
+#thanks, #thanks a {
+    text-align: center;
+    position: relative;
+    top: 85%;
+    color: white;
+}
+
+#form-container {
+    background-color: #F9FAFB;
+    padding: 150px 0;
+}
+
+#description {
+    padding: 0px 100px 0px 30px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+#description p {
+    margin-bottom: 20px;
+}
+
+#fieldset-container {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .2);
+    padding: 20px 40px;
+    margin: 45px 0 30px 0;
+}
+
+#grid-inputs {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 60px;
+}
+
+#grid-inputs label {
+    letter-spacing: 2px;
+    font-size: 12px;
+    display: block;
+}
+
+form>button {
+    background-color: #596D48;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 6px;
+    margin: 0 50px 30px;
+    cursor: pointer;
+}
+
+#login-opt {
+    padding: 0 50px;
+}
+
+#login-opt a {
+    font-weight: bold;
+    color: #607350;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 1px solid #B0C0EB;
+}
+
+input {
+    border: 1px solid #e5e7eb;
+}
+
+#password:invalid, #confirm-password:invalid {
+    border: 1px solid red;
+}
